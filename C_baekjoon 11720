@@ -1,3 +1,4 @@
+/* 공백없는 숫자의 합 */
 #include <stdio.h>
 #pragma warning(disable:4996)
 
@@ -7,9 +8,9 @@ int main() {
 	
 
 	scanf("%d", &a); 
-	scanf("%s", b); #공백을 없애기 위해 문자열로 입력
+	scanf("%s", b); //공백을 없애기 위해 문자열로 입력
 	for (int i = 0; i < a; i++) {
-		c[i] = b[i] - '0'; #아스키코드를 이용
+		c[i] = b[i] - '0'; //아스키코드를 이용
 		score += c[i];
 	}
 	
