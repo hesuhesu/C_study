@@ -1,0 +1,14 @@
+#include <stdio.h>
+#pragma warning(disable:4996)
+
+int main() {
+	int a; //입력받을 학생 출석번호
+	int arr[30] = { 0, }; //30명의 학생 출석번호 배열 및 초기화
+	for (int i = 0; i < 28; i++) { 
+		scanf("%d", &a); // 학생 출석번호 입력
+		arr[a - 1] = 1; // 입력받은 출석번호에 1 넣어주기 
+	} // 입력받은 출석번호는 0, 입력받지 못한 출석번호는 1이 된다 
+	for (int i = 0; i < 30; i++) {
+		if (arr[i] == 0) printf("%d\n", i + 1); // 입력받지 못한 출석번호 = 0 출력
+	}
+}
