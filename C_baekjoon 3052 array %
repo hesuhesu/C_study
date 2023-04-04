@@ -33,3 +33,4 @@ int main() {
 	printf("%d", sum);
 
 }
+후기 : 이중 for문에서 막혀서 고민이 많았다
