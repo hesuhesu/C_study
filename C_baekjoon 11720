@@ -12,17 +12,15 @@ X대학 M교수님은 프로그래밍 수업을 맡고 있다. 교실엔 학생�
 #pragma warning(disable:4996)
 
 int main() {
-	int a, c[1000], score = 0;
-	char b[1000];
+	int arr1[28], arr2[31] = {0,};
 	
-
-	scanf("%d", &a); 
-	scanf("%s", b); //공백을 없애기 위해 문자열로 입력
-	for (int i = 0; i < a; i++) {
-		c[i] = b[i] - '0'; //아스키코드를 이용
-		score += c[i];
+	for (int i = 0; i < 28; i++) {
+		scanf("%d", &arr1[i]);
+		arr2[arr1[i]] = 1;
 	}
-	
-	printf("%d", score);
-
+	for (int i = 1; i < 31; i++) {
+		if (arr2[i] == 0) {
+			printf("%d\n", i);
+		}
+	}
 }
